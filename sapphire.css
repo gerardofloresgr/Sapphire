@@ -4,6 +4,8 @@
 	--text: #303030;
 	--impar: #E2E2E5;
 	--par: #F2F2F5;
+	--antes: #FF4842;
+	--selected: #33B13A;
 }
 
 body {
@@ -134,11 +136,19 @@ nav ul {
 
 .titulo {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	padding: 10px;
 }
 
 .titulo span {
 	font-size: 20px;
+	margin: 0px;
+}
+
+.titulo img {
+	width: 50px;
 }
 
 .content {
@@ -150,6 +160,8 @@ nav ul {
 	justify-content: center;
 	padding: 5px;
 	font-weight: 600;
+	text-align: center;
+	font-size: 15px;
 }
 
 .impar {
@@ -158,6 +170,32 @@ nav ul {
 
 .par {
 	background-color: var(--par);
+}
+
+.comprar {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary);
+	color: white;
+}
+
+.antes {
+	color: var(--antes);
+	font-weight: 900 !important;
+	text-decoration: line-through;
+}
+
+.despues {
+	font-weight: 900 !important;
+}
+
+.selected {
+	background-color: var(--selected) !important;
+	font-size: 50px !important;
+}
+
+.selectedPaquete {
+	border: 2px solid var(--selected) !important;
 }
 
 .footer {
