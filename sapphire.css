@@ -207,7 +207,7 @@ nav ul {
 	padding: 5px;
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media (min-width: 100px) and (max-width: 767px) {
 	.brand-logo div {
 		font-size: 30px;
 	}
